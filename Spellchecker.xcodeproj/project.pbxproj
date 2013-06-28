@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F044FBF177D2C9C00AED726 /* SCHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F044FBE177D2C9C00AED726 /* SCHelpers.m */; };
+		7F044FC0177D2C9C00AED726 /* SCHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F044FBE177D2C9C00AED726 /* SCHelpers.m */; };
+		7F044FC2177D2CB200AED726 /* SCHelpers_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F044FC1177D2CB200AED726 /* SCHelpers_Tests.m */; };
+		7F430C27177BBB4300BB342F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F430C26177BBB4300BB342F /* Foundation.framework */; };
+		7F430C2A177BBB4300BB342F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F430C29177BBB4300BB342F /* main.m */; };
+		7F430C2E177BBB4300BB342F /* Spellchecker.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7F430C2D177BBB4300BB342F /* Spellchecker.1 */; };
+		7F430C6F177C87CD00BB342F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F430C6E177C87CD00BB342F /* XCTest.framework */; };
+		7F430C75177C87CD00BB342F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7F430C73177C87CD00BB342F /* InfoPlist.strings */; };
+		7F430C77177C87CD00BB342F /* Spellchecker_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F430C76177C87CD00BB342F /* Spellchecker_Tests.m */; };
+		7F430C81177C894800BB342F /* Spellchecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F430C80177C894800BB342F /* Spellchecker.m */; };
+		7F430C82177C894800BB342F /* Spellchecker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F430C80177C894800BB342F /* Spellchecker.m */; };
+		7F430C84177C89BC00BB342F /* sampledict in Resources */ = {isa = PBXBuildFile; fileRef = 7F430C83177C89BC00BB342F /* sampledict */; };
+		7FCFB34D177CFF3200C5E160 /* SCIndexScanner_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB34C177CFF3200C5E160 /* SCIndexScanner_Tests.m */; };
+		7FCFB350177CFF8700C5E160 /* SCIndexScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB34F177CFF8700C5E160 /* SCIndexScanner.m */; };
+		7FCFB351177CFF8700C5E160 /* SCIndexScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB34F177CFF8700C5E160 /* SCIndexScanner.m */; };
+		7FCFB355177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB354177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m */; };
+		7FCFB356177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB354177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m */; };
+		7FCFB359177D012300C5E160 /* SCIndexScannerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB358177D012300C5E160 /* SCIndexScannerFactory.m */; };
+		7FCFB35B177D023200C5E160 /* SCSkipDuplicateCharactersIndexScanner_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB35A177D023200C5E160 /* SCSkipDuplicateCharactersIndexScanner_Tests.m */; };
+		7FCFB35C177D028B00C5E160 /* SCIndexScannerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB358177D012300C5E160 /* SCIndexScannerFactory.m */; };
+		7FCFB360177D050300C5E160 /* SCPositionableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB35F177D050300C5E160 /* SCPositionableString.m */; };
+		7FCFB361177D050300C5E160 /* SCPositionableString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB35F177D050300C5E160 /* SCPositionableString.m */; };
+		7FCFB363177D057A00C5E160 /* SCPositionableString_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FCFB362177D057A00C5E160 /* SCPositionableString_Tests.m */; };
+		7FF2C5D9177CA27F002C0273 /* SCWordIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5D8177CA27F002C0273 /* SCWordIndex.m */; };
+		7FF2C5DA177CA27F002C0273 /* SCWordIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5D8177CA27F002C0273 /* SCWordIndex.m */; };
+		7FF2C5DD177CA393002C0273 /* SCWordIndex_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5DC177CA393002C0273 /* SCWordIndex_Tests.m */; };
+		7FF2C5DF177CA450002C0273 /* SCIndifferentVowelsWordIndex_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5DE177CA450002C0273 /* SCIndifferentVowelsWordIndex_Tests.m */; };
+		7FF2C5E2177CA697002C0273 /* SCIndifferentVowelsWordIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5E1177CA697002C0273 /* SCIndifferentVowelsWordIndex.m */; };
+		7FF2C5E3177CA697002C0273 /* SCIndifferentVowelsWordIndex.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5E1177CA697002C0273 /* SCIndifferentVowelsWordIndex.m */; };
+		7FF2C5E6177CB6D7002C0273 /* SCWordIndexFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5E5177CB6D7002C0273 /* SCWordIndexFactory.m */; };
+		7FF2C5E7177CB6D7002C0273 /* SCWordIndexFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF2C5E5177CB6D7002C0273 /* SCWordIndexFactory.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7F430C79177C87CD00BB342F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7F430C1B177BBB4200BB342F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7F430C22177BBB4200BB342F;
+			remoteInfo = Spellchecker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7F430C21177BBB4200BB342F /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+				7F430C2E177BBB4300BB342F /* Spellchecker.1 in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7F044FBD177D2C9C00AED726 /* SCHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCHelpers.h; sourceTree = "<group>"; };
+		7F044FBE177D2C9C00AED726 /* SCHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHelpers.m; sourceTree = "<group>"; };
+		7F044FC1177D2CB200AED726 /* SCHelpers_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCHelpers_Tests.m; sourceTree = "<group>"; };
+		7F430C23177BBB4300BB342F /* Spellchecker */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Spellchecker; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F430C26177BBB4300BB342F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F430C29177BBB4300BB342F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F430C2C177BBB4300BB342F /* Spellchecker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spellchecker-Prefix.pch"; sourceTree = "<group>"; };
+		7F430C2D177BBB4300BB342F /* Spellchecker.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Spellchecker.1; sourceTree = "<group>"; };
+		7F430C3A177C863700BB342F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F430C3C177C863700BB342F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		7F430C55177C86C700BB342F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7F430C58177C86C700BB342F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7F430C59177C86C700BB342F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7F430C5A177C86C700BB342F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7F430C6D177C87CD00BB342F /* Spellchecker Tests.xctest */ = {isa = PBXFileReference; explicitFileType = folder; includeInIndex = 0; path = "Spellchecker Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F430C6E177C87CD00BB342F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		7F430C72177C87CD00BB342F /* Spellchecker Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Spellchecker Tests-Info.plist"; sourceTree = "<group>"; };
+		7F430C74177C87CD00BB342F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7F430C76177C87CD00BB342F /* Spellchecker_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Spellchecker_Tests.m; sourceTree = "<group>"; };
+		7F430C78177C87CD00BB342F /* Spellchecker Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Spellchecker Tests-Prefix.pch"; sourceTree = "<group>"; };
+		7F430C7E177C88FD00BB342F /* constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
+		7F430C7F177C894800BB342F /* Spellchecker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spellchecker.h; sourceTree = "<group>"; };
+		7F430C80177C894800BB342F /* Spellchecker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Spellchecker.m; sourceTree = "<group>"; };
+		7F430C83177C89BC00BB342F /* sampledict */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sampledict; sourceTree = "<group>"; };
+		7FCFB34C177CFF3200C5E160 /* SCIndexScanner_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexScanner_Tests.m; sourceTree = "<group>"; };
+		7FCFB34E177CFF8700C5E160 /* SCIndexScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIndexScanner.h; sourceTree = "<group>"; };
+		7FCFB34F177CFF8700C5E160 /* SCIndexScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexScanner.m; sourceTree = "<group>"; };
+		7FCFB352177D008900C5E160 /* SCIndexScannerSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCIndexScannerSubclass.h; sourceTree = "<group>"; };
+		7FCFB353177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCSkipDuplicateCharactersIndexScanner.h; sourceTree = "<group>"; };
+		7FCFB354177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSkipDuplicateCharactersIndexScanner.m; sourceTree = "<group>"; };
+		7FCFB357177D012300C5E160 /* SCIndexScannerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIndexScannerFactory.h; sourceTree = "<group>"; };
+		7FCFB358177D012300C5E160 /* SCIndexScannerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndexScannerFactory.m; sourceTree = "<group>"; };
+		7FCFB35A177D023200C5E160 /* SCSkipDuplicateCharactersIndexScanner_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCSkipDuplicateCharactersIndexScanner_Tests.m; sourceTree = "<group>"; };
+		7FCFB35E177D050300C5E160 /* SCPositionableString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCPositionableString.h; sourceTree = "<group>"; };
+		7FCFB35F177D050300C5E160 /* SCPositionableString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPositionableString.m; sourceTree = "<group>"; };
+		7FCFB362177D057A00C5E160 /* SCPositionableString_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCPositionableString_Tests.m; sourceTree = "<group>"; };
+		7FF2C5D7177CA27F002C0273 /* SCWordIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWordIndex.h; sourceTree = "<group>"; };
+		7FF2C5D8177CA27F002C0273 /* SCWordIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWordIndex.m; sourceTree = "<group>"; };
+		7FF2C5DB177CA2F9002C0273 /* SCWordIndexSubclass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCWordIndexSubclass.h; sourceTree = "<group>"; };
+		7FF2C5DC177CA393002C0273 /* SCWordIndex_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWordIndex_Tests.m; sourceTree = "<group>"; };
+		7FF2C5DE177CA450002C0273 /* SCIndifferentVowelsWordIndex_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndifferentVowelsWordIndex_Tests.m; sourceTree = "<group>"; };
+		7FF2C5E0177CA697002C0273 /* SCIndifferentVowelsWordIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCIndifferentVowelsWordIndex.h; sourceTree = "<group>"; };
+		7FF2C5E1177CA697002C0273 /* SCIndifferentVowelsWordIndex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCIndifferentVowelsWordIndex.m; sourceTree = "<group>"; };
+		7FF2C5E4177CB6D7002C0273 /* SCWordIndexFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWordIndexFactory.h; sourceTree = "<group>"; };
+		7FF2C5E5177CB6D7002C0273 /* SCWordIndexFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWordIndexFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F430C20177BBB4200BB342F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F430C27177BBB4300BB342F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F430C6A177C87CD00BB342F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F430C6F177C87CD00BB342F /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F430C1A177BBB4200BB342F = {
+			isa = PBXGroup;
+			children = (
+				7F430C28177BBB4300BB342F /* Spellchecker */,
+				7F430C70177C87CD00BB342F /* Spellchecker Tests */,
+				7F430C25177BBB4300BB342F /* Frameworks */,
+				7F430C24177BBB4300BB342F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F430C24177BBB4300BB342F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C23177BBB4300BB342F /* Spellchecker */,
+				7F430C6D177C87CD00BB342F /* Spellchecker Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F430C25177BBB4300BB342F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C26177BBB4300BB342F /* Foundation.framework */,
+				7F430C3A177C863700BB342F /* SenTestingKit.framework */,
+				7F430C3C177C863700BB342F /* UIKit.framework */,
+				7F430C55177C86C700BB342F /* Cocoa.framework */,
+				7F430C6E177C87CD00BB342F /* XCTest.framework */,
+				7F430C57177C86C700BB342F /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F430C28177BBB4300BB342F /* Spellchecker */ = {
+			isa = PBXGroup;
+			children = (
+				7FCFB34B177CFF0000C5E160 /* Scanners */,
+				7FF2C5D6177CA266002C0273 /* Indexing */,
+				7F430C29177BBB4300BB342F /* main.m */,
+				7F430C2D177BBB4300BB342F /* Spellchecker.1 */,
+				7F430C2B177BBB4300BB342F /* Supporting Files */,
+				7F430C7E177C88FD00BB342F /* constants.h */,
+				7F430C7F177C894800BB342F /* Spellchecker.h */,
+				7F430C80177C894800BB342F /* Spellchecker.m */,
+				7FCFB35E177D050300C5E160 /* SCPositionableString.h */,
+				7FCFB35F177D050300C5E160 /* SCPositionableString.m */,
+				7F044FBD177D2C9C00AED726 /* SCHelpers.h */,
+				7F044FBE177D2C9C00AED726 /* SCHelpers.m */,
+			);
+			path = Spellchecker;
+			sourceTree = "<group>";
+		};
+		7F430C2B177BBB4300BB342F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C2C177BBB4300BB342F /* Spellchecker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7F430C57177C86C700BB342F /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C58177C86C700BB342F /* AppKit.framework */,
+				7F430C59177C86C700BB342F /* CoreData.framework */,
+				7F430C5A177C86C700BB342F /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7F430C70177C87CD00BB342F /* Spellchecker Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C71177C87CD00BB342F /* Supporting Files */,
+				7F430C76177C87CD00BB342F /* Spellchecker_Tests.m */,
+				7FF2C5DC177CA393002C0273 /* SCWordIndex_Tests.m */,
+				7FF2C5DE177CA450002C0273 /* SCIndifferentVowelsWordIndex_Tests.m */,
+				7FCFB34C177CFF3200C5E160 /* SCIndexScanner_Tests.m */,
+				7FCFB35A177D023200C5E160 /* SCSkipDuplicateCharactersIndexScanner_Tests.m */,
+				7FCFB362177D057A00C5E160 /* SCPositionableString_Tests.m */,
+				7F044FC1177D2CB200AED726 /* SCHelpers_Tests.m */,
+			);
+			path = "Spellchecker Tests";
+			sourceTree = "<group>";
+		};
+		7F430C71177C87CD00BB342F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F430C72177C87CD00BB342F /* Spellchecker Tests-Info.plist */,
+				7F430C73177C87CD00BB342F /* InfoPlist.strings */,
+				7F430C78177C87CD00BB342F /* Spellchecker Tests-Prefix.pch */,
+				7F430C83177C89BC00BB342F /* sampledict */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7FCFB34B177CFF0000C5E160 /* Scanners */ = {
+			isa = PBXGroup;
+			children = (
+				7FCFB34E177CFF8700C5E160 /* SCIndexScanner.h */,
+				7FCFB352177D008900C5E160 /* SCIndexScannerSubclass.h */,
+				7FCFB34F177CFF8700C5E160 /* SCIndexScanner.m */,
+				7FCFB353177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.h */,
+				7FCFB354177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m */,
+				7FCFB357177D012300C5E160 /* SCIndexScannerFactory.h */,
+				7FCFB358177D012300C5E160 /* SCIndexScannerFactory.m */,
+			);
+			name = Scanners;
+			sourceTree = "<group>";
+		};
+		7FF2C5D6177CA266002C0273 /* Indexing */ = {
+			isa = PBXGroup;
+			children = (
+				7FF2C5D7177CA27F002C0273 /* SCWordIndex.h */,
+				7FF2C5DB177CA2F9002C0273 /* SCWordIndexSubclass.h */,
+				7FF2C5D8177CA27F002C0273 /* SCWordIndex.m */,
+				7FF2C5E0177CA697002C0273 /* SCIndifferentVowelsWordIndex.h */,
+				7FF2C5E1177CA697002C0273 /* SCIndifferentVowelsWordIndex.m */,
+				7FF2C5E4177CB6D7002C0273 /* SCWordIndexFactory.h */,
+				7FF2C5E5177CB6D7002C0273 /* SCWordIndexFactory.m */,
+			);
+			name = Indexing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F430C22177BBB4200BB342F /* Spellchecker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F430C31177BBB4300BB342F /* Build configuration list for PBXNativeTarget "Spellchecker" */;
+			buildPhases = (
+				7F430C1F177BBB4200BB342F /* Sources */,
+				7F430C20177BBB4200BB342F /* Frameworks */,
+				7F430C21177BBB4200BB342F /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Spellchecker;
+			productName = Spellchecker;
+			productReference = 7F430C23177BBB4300BB342F /* Spellchecker */;
+			productType = "com.apple.product-type.tool";
+		};
+		7F430C6C177C87CD00BB342F /* Spellchecker Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F430C7B177C87CD00BB342F /* Build configuration list for PBXNativeTarget "Spellchecker Tests" */;
+			buildPhases = (
+				7F430C69177C87CD00BB342F /* Sources */,
+				7F430C6A177C87CD00BB342F /* Frameworks */,
+				7F430C6B177C87CD00BB342F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7F430C7A177C87CD00BB342F /* PBXTargetDependency */,
+			);
+			name = "Spellchecker Tests";
+			productName = "Spellchecker Tests";
+			productReference = 7F430C6D177C87CD00BB342F /* Spellchecker Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F430C1B177BBB4200BB342F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					7F430C6C177C87CD00BB342F = {
+						TestTargetID = 7F430C22177BBB4200BB342F;
+					};
+				};
+			};
+			buildConfigurationList = 7F430C1E177BBB4200BB342F /* Build configuration list for PBXProject "Spellchecker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7F430C1A177BBB4200BB342F;
+			productRefGroup = 7F430C24177BBB4300BB342F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F430C22177BBB4200BB342F /* Spellchecker */,
+				7F430C6C177C87CD00BB342F /* Spellchecker Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F430C6B177C87CD00BB342F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F430C84177C89BC00BB342F /* sampledict in Resources */,
+				7F430C75177C87CD00BB342F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F430C1F177BBB4200BB342F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF2C5E6177CB6D7002C0273 /* SCWordIndexFactory.m in Sources */,
+				7FCFB355177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m in Sources */,
+				7FCFB359177D012300C5E160 /* SCIndexScannerFactory.m in Sources */,
+				7F430C81177C894800BB342F /* Spellchecker.m in Sources */,
+				7FF2C5E2177CA697002C0273 /* SCIndifferentVowelsWordIndex.m in Sources */,
+				7F044FBF177D2C9C00AED726 /* SCHelpers.m in Sources */,
+				7FCFB350177CFF8700C5E160 /* SCIndexScanner.m in Sources */,
+				7FCFB360177D050300C5E160 /* SCPositionableString.m in Sources */,
+				7F430C2A177BBB4300BB342F /* main.m in Sources */,
+				7FF2C5D9177CA27F002C0273 /* SCWordIndex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7F430C69177C87CD00BB342F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FCFB351177CFF8700C5E160 /* SCIndexScanner.m in Sources */,
+				7F430C82177C894800BB342F /* Spellchecker.m in Sources */,
+				7FCFB356177D00F200C5E160 /* SCSkipDuplicateCharactersIndexScanner.m in Sources */,
+				7F430C77177C87CD00BB342F /* Spellchecker_Tests.m in Sources */,
+				7FCFB361177D050300C5E160 /* SCPositionableString.m in Sources */,
+				7F044FC0177D2C9C00AED726 /* SCHelpers.m in Sources */,
+				7FF2C5DF177CA450002C0273 /* SCIndifferentVowelsWordIndex_Tests.m in Sources */,
+				7F044FC2177D2CB200AED726 /* SCHelpers_Tests.m in Sources */,
+				7FCFB34D177CFF3200C5E160 /* SCIndexScanner_Tests.m in Sources */,
+				7FF2C5E3177CA697002C0273 /* SCIndifferentVowelsWordIndex.m in Sources */,
+				7FF2C5DD177CA393002C0273 /* SCWordIndex_Tests.m in Sources */,
+				7FCFB363177D057A00C5E160 /* SCPositionableString_Tests.m in Sources */,
+				7FF2C5E7177CB6D7002C0273 /* SCWordIndexFactory.m in Sources */,
+				7FCFB35B177D023200C5E160 /* SCSkipDuplicateCharactersIndexScanner_Tests.m in Sources */,
+				7FCFB35C177D028B00C5E160 /* SCIndexScannerFactory.m in Sources */,
+				7FF2C5DA177CA27F002C0273 /* SCWordIndex.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7F430C7A177C87CD00BB342F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7F430C22177BBB4200BB342F /* Spellchecker */;
+			targetProxy = 7F430C79177C87CD00BB342F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7F430C73177C87CD00BB342F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F430C74177C87CD00BB342F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F430C2F177BBB4300BB342F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7F430C30177BBB4300BB342F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7F430C32177BBB4300BB342F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spellchecker/Spellchecker-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F430C33177BBB4300BB342F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spellchecker/Spellchecker-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7F430C7C177C87CD00BB342F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spellchecker Tests/Spellchecker Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Spellchecker Tests/Spellchecker Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		7F430C7D177C87CD00BB342F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Spellchecker Tests/Spellchecker Tests-Prefix.pch";
+				INFOPLIST_FILE = "Spellchecker Tests/Spellchecker Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F430C1E177BBB4200BB342F /* Build configuration list for PBXProject "Spellchecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F430C2F177BBB4300BB342F /* Debug */,
+				7F430C30177BBB4300BB342F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F430C31177BBB4300BB342F /* Build configuration list for PBXNativeTarget "Spellchecker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F430C32177BBB4300BB342F /* Debug */,
+				7F430C33177BBB4300BB342F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F430C7B177C87CD00BB342F /* Build configuration list for PBXNativeTarget "Spellchecker Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F430C7C177C87CD00BB342F /* Debug */,
+				7F430C7D177C87CD00BB342F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F430C1B177BBB4200BB342F /* Project object */;
+}
